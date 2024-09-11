@@ -7,8 +7,7 @@ import matplotlib.pyplot as plt
 from io import BytesIO
 
 # Load the pre-trained CatBoost model
-with open('C:/Users/Temitope/TUDelft/best_catboost_model.pkl', 'rb') as model_file:
-    best_catboost = pickle.load(model_file)
+best_catboost = pickle.load(open('best_catboost_model.pkl', 'rb'))
 
 # Default unit costs and carbon footprints
 unit_costs = {
