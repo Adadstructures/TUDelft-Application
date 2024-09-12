@@ -229,7 +229,7 @@ if st.button("Optimize Mix"):
         **References**: 
         1. Khodabakhshian, A., De Brito, J., Ghalehnovi, M., Shamsabadi, E.A. (2018). Mechanical, environmental and economic performance of structural concrete containing silica fume and marble industry waste powder. Construction and Building Materials. 169, pp. 237–251. https://doi.org/10.1016/j.conbuildmat.2018.02.192
         2. Thilakarathna, P.S.M., Seo, S., Kristombu Baduge, K.S., Lee, H., Mendis, P., Foliente, G. (2020). Embodied carbon analysis and benchmarking emissions of high and ultra-high strength concrete using machine learning algorithms. Journal of Cleaner Production. https://doi.org/10.1016/j.jclepro.2020.121281
-        3. Yeh, I. C. (1998) Modeling of strength of high performance concrete using artificial neural networks. Cement and Concrete Research. 28 (12), pp. 1797-1808. https://doi.org/10.1016/S0008-8846(98)00165-3
+        3. Yeh, I. C. (1998). Modeling of strength of high performance concrete using artificial neural networks. Cement and Concrete Research. 28 (12), pp. 1797-1808. https://doi.org/10.1016/S0008-8846(98)00165-3
         """)
         
     except Exception as e:
