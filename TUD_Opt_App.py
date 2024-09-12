@@ -132,7 +132,7 @@ densities['water'] = st.sidebar.number_input('Water density (kg/m³)', value=den
 target_compressive_strength = st.number_input('Enter the target compressive strength (20 MPa - 70 MPa)', min_value=20.0, max_value=70.0, value=40.0)
 
 # User input for carbon footprint constraint
-carbon_footprint_constraint = st.number_input('Maximum allowed carbon footprint (kg CO2-eq)', value=200.0, min_value=0.0)
+carbon_footprint_constraint = st.number_input('Maximum allowable carbon footprint (kg CO2-eq)', value=200.0, min_value=0.0)
 
 if st.button("Optimize Mix"):
     try:
@@ -222,7 +222,8 @@ if st.button("Optimize Mix"):
         1. The predicted strength was intended for concrete cubic compressive strength in Megapascal.
         2. The values of the mix constituents predicted in kilogram were evaluated for 1 cubic meter of concrete.
         3. Please note that the model was trained using concrete mix data from Yeh (2008) and the carbon and costs inputs from Khodabakhshian et al (2018) and Thilakarathna et al (2020).
-        4. The results from the model should be verified and certified by a competent structural engineer with expertise in concrete before use in practical applications.
+        4. The allowable carbon footprint threshold might be adjusted as the required when the compressive strength exceeds 60 MPa
+        5. The results from the model should be verified and certified by a competent structural engineer with expertise in concrete before use in practical applications.
         """)
         
         st.markdown("""
