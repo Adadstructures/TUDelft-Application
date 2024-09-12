@@ -218,8 +218,40 @@ if st.button("Optimize Mix"):
 
         # Add footnote
         st.markdown("""
-        **Author**: Temitope E. Dada | **Email**: t.e.dada@liverpool.ac.uk
+        **Notes**: 
+        1. The predicted strength was intended for concrete cubic compressive strength in Megapascal.
+        2. The values of the mix constituents predicted in kilogram were evaluated for 1 cubic meter of concrete.
+        3. Please note that the model was trained using concrete mix data from Yeh (2008) and the carbon and costs inputs from Khodabakhshian et al (2018) and Thilakarathna et al (2020).
+        4. The results from the model should be verified and certified by a competent structural engineer with expertise in concrete before use in practical applications.
+        """)
+        
+        st.markdown("""
+        **References**: 
+        1. Khodabakhshian, A., De Brito, J., Ghalehnovi, M., Shamsabadi, E.A. (2018). Mechanical, environmental and economic performance of structural concrete containing silica fume and marble industry waste powder. Construction and Building Materials. 169, pp. 237–251. https://doi.org/10.1016/j.conbuildmat.2018.02.192
+        2. Thilakarathna, P.S.M., Seo, S., Kristombu Baduge, K.S., Lee, H., Mendis, P., Foliente, G. (2020). Embodied carbon analysis and benchmarking emissions of high and ultra-high strength concrete using machine learning algorithms. Journal of Cleaner Production. https://doi.org/10.1016/j.jclepro.2020.121281
+        3. Yeh, I. C. (1998) Modeling of strength of high performance concrete using artificial neural networks. Cement and Concrete Research. 28 (12), pp. 1797-1808. https://doi.org/10.1016/S0008-8846(98)00165-3
         """)
         
     except Exception as e:
         st.error(f"An error occurred: {e}")
+# Adding a footer with contact information
+footer = """
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: #6c757d;
+}
+</style>
+<div class="footer">
+    <p>© 2024 My Streamlit App. All rights reserved. |Temitope E. Dada | For Queries: <a href="mailto:t.e.dada@liverpool.ac.uk">t.e.dada@liverpool.ac.uk</a></p>
+</div>
+"""
+
+st.markdown(footer, unsafe_allow_html=True)   
