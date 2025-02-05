@@ -94,7 +94,7 @@ def objective(trial):
     return total_cost + total_carbon_footprint + penalty
 
 # Streamlit App
-st.title("Concrete Mix Optimizer: Temitope Dada Postdoc Application - TUDelft")
+st.title("Concrete Mix Optimizer")
 
 # User input for unit costs
 st.sidebar.header("Unit Costs")
